@@ -8,17 +8,29 @@ import java.util.List;
  */
 
 public class UserViewModel {
-    private List<UserInfo> userInfoList;
+    private List<BindAdapterType> userInfoList;
 
     public UserViewModel() {
         this.userInfoList = new ArrayList<>();
     }
 
-    public List<UserInfo> getUserInfoList(){
+    public List<BindAdapterType> getUserInfoList(){
         userInfoList.add(new UserInfo("张三","25岁"));
+        userInfoList.add(new StudentInfo(R.mipmap.ic_launcher_round,"学生","15岁"));
         userInfoList.add(new UserInfo("张三","25岁"));
+        userInfoList.add(new StudentInfo(R.mipmap.ic_launcher_round,"学生","15岁"));
         userInfoList.add(new UserInfo("张三","25岁"));
+        userInfoList.add(new StudentInfo(R.mipmap.ic_launcher_round,"学生","15岁"));
         userInfoList.add(new UserInfo("张三","25岁"));
+        userInfoList.add(new StudentInfo(R.mipmap.ic_launcher_round,"学生","15岁"));
+        userInfoList.add(new UserInfo("张三","25岁"));
+        userInfoList.add(new StudentInfo(R.mipmap.ic_launcher_round,"学生","15岁"));
+        userInfoList.add(new UserInfo("张三","25岁"));
+        userInfoList.add(new StudentInfo(R.mipmap.ic_launcher_round,"学生","15岁"));
+        userInfoList.add(new UserInfo("张三","25岁"));
+        userInfoList.add(new StudentInfo(R.mipmap.ic_launcher_round,"学生","15岁"));
+        userInfoList.add(new UserInfo("张三","25岁"));
+        userInfoList.add(new StudentInfo(R.mipmap.ic_launcher_round,"学生","15岁"));
         return userInfoList;
     }
 }

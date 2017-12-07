@@ -17,6 +17,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:gravity="center"
+            android:onClick="@{user.clickName}"
             android:text="@{user.name}"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -26,6 +27,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:gravity="center"
+            android:onClick="@{user.clickAge}"
             android:text="@{user.age}"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" />

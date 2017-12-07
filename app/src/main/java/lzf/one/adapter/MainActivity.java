@@ -18,12 +18,14 @@ public class MainActivity extends AppCompatActivity {
         mBind.text.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mBind.recycler.setVisibility(View.VISIBLE);
+                if (mBind.recycler.getVisibility()==View.GONE) {
+                    mBind.recycler.setVisibility(View.VISIBLE);
+                }
             }
         });
-        mBind.recycler.setLayoutManager(new LinearLayoutManager(this));
         userViewModel=new UserViewModel();
         adapter=new MyAdapter(this,userViewModel.getUserInfoList());
+        mBind.recycler.setLayoutManager(new LinearLayoutManager(this));
         mBind.recycler.setAdapter(adapter);
     }
 }

@@ -1,7 +1,12 @@
 package lzf.one.adapter;
 
+import android.view.View;
+import android.widget.Toast;
+
 /**
- * Created by lizhifeng on 2017/12/7 0007.
+ *
+ * @author lizhifeng
+ * @date 2017/12/7 0007
  */
 
 public class UserInfo implements BindAdapterType {
@@ -29,6 +34,14 @@ public class UserInfo implements BindAdapterType {
         this.age = age;
     }
 
+    public void clickName(View view) {
+        Toast.makeText(view.getContext(), name, Toast.LENGTH_SHORT).show();
+    }
+
+    public void clickAge(View view) {
+        Toast.makeText(view.getContext(), age, Toast.LENGTH_SHORT).show();
+    }
+
     @Override
     public int getType() {
         return R.layout.user_item;
@@ -36,6 +49,6 @@ public class UserInfo implements BindAdapterType {
 
     @Override
     public int getId() {
-        return 0;
+        return BR.user;
     }
 }
